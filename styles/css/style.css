@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: normal;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: Montserrat;
+  color: #fff;
+  font-size: 18px;
+  background-color: #F5F9FF;
+}
+
+.hero-block__wrapper {
+  background-image: url("../../img/HERO_BG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.container {
+  max-width: 1412px;
+  margin: 0 auto;
+}
+
+.header .header-container {
+  height: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-container .header-logo .header-logo__text {
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.header .header-container .header-logo .logo_stylize {
+  background: linear-gradient(98.89deg, #FF9B05 25.06%, #fcb27c 88.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #FF9B05;
+}
+
+.header .header-container .header-navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 750px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-container .header-navbar__list .header-navbar__link {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.header .header-container .header-navbar__list .header-navbar__link:hover {
+  border-bottom: 3px solid #FF9B05;
+}
+
+.header .header-container .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header-container .header-right .header-language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 123px;
+  height: 58px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.header .header-container .header-right .header-language .header-arrow__link {
+  position: relative;
+  top: 9px;
+  right: 0px;
+}
+
+.header .header-container .header-right .header-user__button {
+  margin-left: 15px;
+  width: 77px;
+  height: 60px;
+  background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+  -webkit-box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+
+.hero-container .hero-content {
+  padding-top: 10px;
+  position: relative;
+}
+
+.hero-container .hero-content .hero-armour {
+  position: absolute;
+  left: 0px;
+  top: 490px;
+}
+
+.hero-container .hero-content .hero-text {
+  width: 680px;
+}
+
+.hero-container .hero-content .hero-text .hero-title {
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 67px;
+  position: relative;
+  z-index: 5;
+}
+
+.hero-container .hero-content .hero-text .hero-title .hero-title-decor__one {
+  position: absolute;
+  width: 59.2px;
+  height: 58.84px;
+  top: 5px;
+  right: 285px;
+}
+
+.hero-container .hero-content .hero-text .hero-title .hero-title-decor__two {
+  position: absolute;
+  z-index: -5;
+  top: -12px;
+  left: -25px;
+}
+
+.hero-container .hero-content .hero-text .hero-text__line {
+  margin-top: 28px;
+  width: 110px;
+  height: 5px;
+  background: linear-gradient(120.79deg, #FFAC8B 31.33%, #FF4900 101.79%);
+}
+
+.hero-container .hero-content .hero-text .hero-text__subtitles {
+  margin-top: 27px;
+}
+
+.hero-container .hero-content .hero-text .hero-text__subtitles p {
+  width: 680px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.hero-container .hero-content .hero-text .hero-text__subtitles p:last-child {
+  margin-top: 15px;
+}
+
+.hero-container .hero-content .hero-buttons {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0px 34px;
+}
+
+.hero-container .hero-content .hero-buttons .hero-button__buy {
+  width: 240px;
+  height: 78px;
+  background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+  -webkit-box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hero-container .hero-content .hero-buttons .hero-button__buy img {
+  width: 54px;
+  height: 30px;
+}
+
+.hero-container .hero-content .hero-buttons .hero-button__buy:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hero-container .hero-content .hero-buttons .hero-button__video {
+  padding: 0px 39px;
+  border: 1px solid #A9EAFF;
+  border-radius: 5px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hero-container .hero-content .hero-buttons .hero-button__video:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
