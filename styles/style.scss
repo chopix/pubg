@@ -11,11 +11,33 @@ body {
     background-image: url('../../img/HERO_BG.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    // height: 100%;
 }
 .container {
     max-width: 1412px;
     margin: 0 auto;
+}
+.btn-buy {
+    width: 240px;
+    height: 78px;
+    background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s ease;
+    img {
+        // margin-left: 36px;
+        width: 54px;
+        height: 30px;
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 .header {
     .header-container {
@@ -66,6 +88,7 @@ body {
                 box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
                 border-radius: 5px;
                 color: #000;
+                font-weight: 700;
                 text-transform: uppercase;
                 .header-arrow__link{
                     position: relative;
@@ -80,6 +103,10 @@ body {
                 background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
                 box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
                 border-radius: 5px;
+                transition: 0.3s linear;
+                &:hover {
+                    background: linear-gradient(98.89deg, #db8504 25.06%, #ba672b 88.94%);
+                }
             }
         }
 
@@ -89,11 +116,6 @@ body {
     .hero-content {
         padding-top: 10px;
         position: relative;
-        .hero-armour {
-            position: absolute;
-            left: 0px;
-            top:490px;
-        }
         .hero-text {
             width: 680px;
             .hero-title {
@@ -141,28 +163,6 @@ body {
             margin-top: 25px;
             display: flex;
             gap: 0px 34px;
-            .hero-button__buy {
-                width: 240px;
-                height: 78px;
-                background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
-                box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
-                border-radius: 5px;
-                font-weight: 600;
-                font-size: 18px;
-                color: #fff;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                transition: all 0.3s ease;
-                img {
-                    // margin-left: 36px;
-                    width: 54px;
-                    height: 30px;
-                }
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }
             .hero-button__video {
                 padding: 0px 39px;
                 border: 1px solid #A9EAFF;
@@ -177,5 +177,224 @@ body {
                 }
             }
         }
+    }
+}
+.func-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    .func-left {
+        width: 567px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .func-oc {
+            display: flex;
+            .func-oc__item {
+                background: #FFFFFF;
+                box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+                border-radius: 5px;
+                margin-left: 17px;
+                display: flex;
+                align-items: center;
+                padding: 22px 0px 22px 33px;
+            
+                p {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #AAAAAA;
+                    margin-left: 16px;
+                }
+            }
+            .oc-windows {
+                width: 206px;
+                height: 73px;
+            }
+            .oc-android {
+                width: 195px;
+                height: 73px;
+            }
+            .oc-ios {
+                width: 135px;
+                height: 73px;
+                p {
+                    margin-top: 5px;
+                }
+            }
+        }
+        .func-mobile {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            .func-mobile__img {
+                margin-top: 30px;
+                // width: 300px;
+            }
+            .func-arrows {
+                button {
+                    background: none;
+                    margin-left: 33px;
+                }
+                .func-arrow_gray {
+                    cursor:auto;
+                }
+            }
+        }
+    }
+    .func-right {
+        width: 649px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .func-right__title {
+            // margin-top: 20px;
+            font-weight: 800;
+            font-size: 45px;
+            color: #2E3A59;
+            text-transform: uppercase;
+            // margin-left: 65px;
+            position: relative;
+            .title__decor {
+                position: absolute;
+                width: 40.23px;
+                height: 8.05px;
+                background: #FB8500;
+                transform: rotate(-45deg);
+                
+            }
+            .title_decor__one {
+                top: -3px;
+                left: -20px;
+            }
+            .title_decor__two {
+                bottom: 5px;
+                right: -30px;
+            }
+        }
+        .func-right__subtitle {
+            margin-top: 25px;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #828282;
+            width: 495px;
+        }
+        .func-right__list {
+            margin-top: 60px;
+            li {
+                background: url('../../img/ul_image.svg') left no-repeat;
+	            padding-left: 25px;
+            }
+            .func-right__item {
+                margin-bottom: 50px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: justify;
+
+                color: #2E3A59;
+            }
+        }
+        .func-right__warning {
+            margin-top: 35px;
+            width: 649px;
+            height: 87px;
+            background: #FFFFFF;
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.04);
+            border-radius: 5px;
+            font-size: 18px;
+            color: #828282;
+            display: flex;
+            align-items: center;
+            padding: 30px 0px 30px 30px;
+            p {
+                margin-left: 19px;
+            }
+        }
+        .func-right__buttons {
+            display: flex;
+            margin-top: 81px;
+            .func-button__buy {
+                width: 198px;
+            }
+            .func-button__video {
+                width: 288px;
+                background: #FF3B3B;
+                border-radius: 5px;
+                box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+                border-radius: 5px;
+                font-weight: 600;
+                font-size: 18px;
+                color: #fff;
+                display: flex;
+                padding-left: 28px;
+                margin-left: 51px;
+                align-items: center;
+                transition: all 0.3s ease;
+                img {
+                    // margin-left: 36px;
+                    width: 54px;
+                    height: 30px;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+.talk {
+    background: url('../../img/talk_bg.png');
+    background-size: cover;
+		background-position: top center;
+    background-repeat: no-repeat;
+    .talk-container {
+        .talk-title {
+            text-align: center;
+            padding-top: 250px;
+            font-weight: 800;
+            font-size: 45px;
+        }		
+				.talk-block__wrapper {
+					margin-top: 40px;
+					padding-bottom: 61px;
+					.talk-block {
+						margin: auto;
+						width: 826px;
+						height: 241px;
+						background: #FFFFFF;
+						border-radius: 5px;
+						position: relative;
+						.talk-block__button {
+							position: absolute;
+							background: none;
+							// width: 162.63px;
+							// height: 162.63px;
+						}
+						.button-left {
+							top: 10%;
+							left: -100px;
+						} 
+						.button-right {
+							top: 10%;
+							right: -100px;
+							transform: rotate(180deg);
+						}
+						.talk-block__decor {
+							position: absolute;
+							font-weight: 600;
+							font-size: 125px;
+							line-height: 152px;
+							color: #FFFFFF;
+						}
+						.talk-block__decor-one {
+							top: 0px;
+							left: 0px;
+						}
+					}
+				}
     }
 }
