@@ -79,21 +79,70 @@ body {
         .header-right {
             display: flex;
             .header-language {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                width: 123px;
-                height: 58px;
+                transition: 0.3s linear;
                 background: #FFFFFF;
                 box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
                 border-radius: 5px;
                 color: #000;
                 font-weight: 700;
                 text-transform: uppercase;
-                .header-arrow__link{
+                width: 123px;
+                height: 58px;
+                position: relative;
+                .header-language__ru {
+                    display: flex;
+                    padding: 19px 0px 19px 16px;
                     position: relative;
-                    top: 9px;
-                    right: 0px;
+                    img {
+                        width: 30px;
+                        
+                    }
+                    p {
+                        margin-top: 2px;
+                        margin-left: 15px;
+                    }
+                    .header-arrow__link {
+                        img {
+                            width: 12px;
+                            margin-top: 2px;
+                            margin-left: 14px;
+                        }
+                    }
+                }
+                .header-language__eng {
+                    visibility: hidden;
+                    position: absolute;
+                    top: 50px;
+                    // border: 1px solid #000;
+                    background: #FFFFFF;
+                    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+                    border-radius: 5px;
+                    color: #000;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    width: 123px;
+                    height: 58px;
+                    display: flex;
+                    padding: 19px 0px 19px 19px;
+                    img {
+                        width: 25px;
+                        height: 23px;
+                        
+                    }
+                    p {
+                        margin-top: 2px;
+                        margin-left: 15px;
+                    }
+                }
+                .header-arrow__link{
+                     position: relative;
+                     top: 5px;
+                     right: 0px;
+                }
+                &:hover {
+                    .header-language__eng {
+                        visibility: visible;
+                    }
                 }
             }
             .header-user__button {
@@ -207,6 +256,17 @@ body {
                     margin-left: 16px;
                 }
             }
+            .active {
+                background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+                box-shadow: 0px 15px 25px rgba(0, 163, 255, 0.3);
+                border-radius: 5px;
+                p {
+                    color: #fff;
+                }
+                path {
+                    fill: #fff;
+                }
+            }
             .oc-windows {
                 width: 206px;
                 height: 73px;
@@ -221,6 +281,8 @@ body {
                 p {
                     margin-top: 5px;
                 }
+                padding: 0;
+                padding-left: 28px;
             }
         }
         .func-mobile {
@@ -482,7 +544,6 @@ body {
             display: flex;
             align-items: center;
             padding: 22px 0px 22px 33px;
-        
             p {
                 font-weight: 700;
                 font-size: 18px;
@@ -490,20 +551,31 @@ body {
                 margin-left: 16px;
             }
         }
-        .oc-windows {
+        .active_tarif {
+            background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+            p {
+                color: #fff;
+            }
+            path {
+                fill: #fff;
+            }
+        }
+        .tarif_oc-windows {
             width: 206px;
             height: 73px;
         }
-        .oc-android {
+        .tarif_oc-android {
             width: 195px;
             height: 73px;
         }
-        .oc-ios {
+        .tarif_oc-ios {
             width: 135px;
             height: 73px;
             p {
                 margin-top: 5px;
             }
+            padding: 0;
+            padding-left: 28px;
         }
     }
     .tarifs-blocks {
@@ -839,21 +911,70 @@ body {
             .footer-right {
                 display: flex;
                 .footer-language {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    width: 123px;
-                    height: 58px;
+                    transition: 0.3s linear;
                     background: #FFFFFF;
                     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
                     border-radius: 5px;
                     color: #000;
                     font-weight: 700;
                     text-transform: uppercase;
-                    .footer-arrow__link{
+                    width: 123px;
+                    height: 58px;
+                    position: relative;
+                    .footer-language__ru {
+                        display: flex;
+                        padding: 19px 0px 19px 16px;
                         position: relative;
-                        top: 9px;
-                        right: 0px;
+                        img {
+                            width: 30px;
+                            
+                        }
+                        p {
+                            margin-top: 2px;
+                            margin-left: 15px;
+                        }
+                        .footer-arrow__link {
+                            img {
+                                width: 12px;
+                                margin-top: 2px;
+                                margin-left: 14px;
+                            }
+                        }
+                    }
+                    .footer-language__eng {
+                        visibility: hidden;
+                        position: absolute;
+                        top: 50px;
+                        // border: 1px solid #000;
+                        background: #FFFFFF;
+                        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+                        border-radius: 5px;
+                        color: #000;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        width: 123px;
+                        height: 58px;
+                        display: flex;
+                        padding: 19px 0px 19px 19px;
+                        img {
+                            width: 25px;
+                            height: 23px;
+                            
+                        }
+                        p {
+                            margin-top: 2px;
+                            margin-left: 15px;
+                        }
+                    }
+                    .footer-arrow__link{
+                         position: relative;
+                         top: 5px;
+                         right: 0px;
+                    }
+                    &:hover {
+                        .footer-language__eng {
+                            visibility: visible;
+                        }
                     }
                 }
                 .footer-user__button {
@@ -863,12 +984,79 @@ body {
                     background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
                     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
                     border-radius: 5px;
-                    transition: 0.3s linear;
                     &:hover {
                         background: linear-gradient(98.89deg, #db8504 25.06%, #ba672b 88.94%);
                     }
                 }
             }
         }
+    }
+}
+
+
+
+
+
+// АДАПТИВ
+@media screen and (max-width: 1560px) {
+    .hero-block__wrapper {
+        background-size: cover;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1140px;
+	}
+    .hero-block__wrapper {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+    }
+    .hero-block__wrapper {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+    .hero-block__wrapper {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+    }
+    .hero-block__wrapper {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+		padding: 0 15px;
+    }
+    .hero-block__wrapper {
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 375px) {
+    .hero-block__wrapper {
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 1px) {
+    .hero-block__wrapper {
+        background-size: cover;
     }
 }

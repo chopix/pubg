@@ -1,3 +1,80 @@
+
+function scrollDownTo(element) {
+    window.scroll({
+        left: 0,
+        top: element.offsetTop,
+        behavior: "smooth"
+    });
+};
+function scrollUpTo(element) {
+    element.scrollIntoView({behavior: "smooth"});
+
+};
+
+
+// language popup
+const languageRu = document.querySelector('.header-language__ru');
+const languageEng = document.querySelector('.header-language__eng');
+
+languageEng.addEventListener('click', () => {
+    console.log('aaaa');
+});
+
+languageRu.addEventListener('click', () => {
+    console.log('a');
+});
+
+
+
+// oc buttons
+const buttonIOS = document.querySelector('.oc-ios');
+const buttonAndroid = document.querySelector('.oc-android');
+const buttonWindows = document.querySelector('.oc-windows');
+const funcButton = document.querySelectorAll('.func-oc__item');
+const tarifButton = document.querySelectorAll('.tarifs-button');
+
+for (let i = 0; i < funcButton.length; i++) {
+    funcButton[i].addEventListener("click", function() {
+      let current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+}
+for (let i = 0; i < tarifButton.length; i++) {
+    tarifButton[i].addEventListener("click", function() {
+      let current = document.getElementsByClassName("active_tarif");
+      current[0].className = current[0].className.replace(" active_tarif", "");
+      this.className += " active_tarif";
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const linkMain = document.querySelector('.link_main');
 const main = document.querySelector('.hero');
 const linkTarifs = document.querySelector('.link_tarif');
@@ -19,20 +96,7 @@ const linkFootReviews = document.querySelector('.foot_link_reviews');
 const linkFootFAQ = document.querySelector('.foot_link_faq');
 const linkFootContacts = document.querySelector('.foot_link_contacts');
 const linkFootFunc = document.querySelector('.foot_link_func');
-
-
-function scrollDownTo(element) {
-    window.scroll({
-        left: 0,
-        top: element.offsetTop,
-        behavior: "smooth"
-    });
-};
-function scrollUpTo(element) {
-    element.scrollIntoView({behavior: "smooth"});
-
-};
-
+// eventListener
 linkTarifs.addEventListener('click', () => {
     scrollDownTo(tarifs);
 });
