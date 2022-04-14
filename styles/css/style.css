@@ -81,7 +81,6 @@ body {
   background-image: url("../../img/HERO_BG.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
 }
 
 .container {
@@ -359,6 +358,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 100px;
 }
 
@@ -824,6 +825,7 @@ body {
 }
 
 .tarifs-container .tarifs-blocks {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1359,85 +1361,52 @@ body {
 }
 
 @media screen and (max-width: 1560px) {
-  .hero-block__wrapper {
-    min-width: 1560px;
-  }
-  .talk {
-    min-width: 1560px;
-  }
-  .footer {
-    min-width: 1560px;
+  .container {
+    max-width: 1300px;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .hero-block__wrapper {
-    max-width: 1200px;
+@media screen and (max-width: 1250px) {
+  .container {
+    max-width: 1050px;
   }
-  .talk {
-    max-width: 1200px;
+  .func-container {
+    margin: auto;
   }
-  .footer {
-    max-width: 1200px;
+  .func-container .func-left {
+    margin: auto;
+  }
+  .func-container .func-left .func-mobile__img {
+    width: 80%;
+  }
+  .func-container .func-right__title {
+    margin-top: 40px;
+  }
+  .func-container .func-right__list {
+    margin: auto;
+    text-align: center;
+  }
+  .func-container .func-right__list .func-right__item {
+    text-align: center;
+  }
+  .tarifs-blocks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tarifs-blocks .tarif-block__three {
+    margin-top: 50px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .hero-block__wrapper {
-    max-width: 1199px;
+  .container {
+    max-width: 1000px;
   }
-  .talk {
-    max-width: 1199px;
+  .questions-blocks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .footer {
-    max-width: 1199px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .hero-block__wrapper {
-    max-width: 991px;
-  }
-  .talk {
-    max-width: 991px;
-  }
-  .footer {
-    max-width: 991px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .hero-block__wrapper {
-    max-width: 767px;
-  }
-  .talk {
-    max-width: 767px;
-  }
-  .footer {
-    max-width: 767px;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .hero-block__wrapper {
-    max-width: 575px;
-  }
-  .talk {
-    max-width: 575px;
-  }
-  .footer {
-    max-width: 575px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .hero-block__wrapper {
-    max-width: 375px;
-  }
-  .talk {
-    max-width: 375px;
-  }
-  .footer {
-    max-width: 375px;
+  .questions-blocks .question-block {
+    width: 500px;
   }
 }

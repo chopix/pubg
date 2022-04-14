@@ -11,7 +11,6 @@ body {
     background-image: url('../../img/HERO_BG.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%
     // height: 100%;
 }
 .container {
@@ -233,6 +232,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     padding-top: 100px;
     .func-left {
         width: 567px;
@@ -580,6 +580,7 @@ body {
         }
     }
     .tarifs-blocks {
+        margin: auto;
         display: flex;
         margin-top: 60px;
         justify-content: center;
@@ -1000,96 +1001,83 @@ body {
 
 // АДАПТИВ
 @media screen and (max-width: 1560px) {
-    .hero-block__wrapper {
-        min-width: 1560px;
-    }
-    .talk {
-        min-width: 1560px;
-    }
-    .footer {
-        min-width: 1560px;
+    .container {
+        max-width: 1300px;
     }
     
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
 	
-    .hero-block__wrapper {
-        max-width: 1200px;
+    .container {
+        max-width: 1050px;
     }
-    .talk {
-        max-width: 1200px;
+    .func-container {
+        margin: auto;
+        .func-left {
+            margin: auto;
+            .func-mobile__img {
+                width: 80%;
+            }
+        }
+        .func-right__title {
+            margin-top: 40px;
+        }
+        .func-right__list {
+            margin: auto;
+            text-align: center;
+            .func-right__item {
+                text-align: center;
+            }
+        }
     }
-    .footer {
-        max-width: 1200px;
+    .tarifs-blocks {
+        flex-wrap: wrap;
+        .tarif-block__three {
+            margin-top: 50px;
+        }
     }
     
 }
 
 @media screen and (max-width: 1199px) {
-	
-    .hero-block__wrapper {
-        max-width: 1199px;
+    .container {
+        max-width: 1000px;
     }
-    .talk {
-        max-width: 1199px;
-    }
-    .footer {
-        max-width: 1199px;
+    .questions-blocks {
+        flex-wrap: wrap;
+        .question-block {
+            width: 500px;
+        }
     }
     
 }
 
 @media screen and (max-width: 991px) {
-    .hero-block__wrapper {
-        max-width: 991px;
-    }
-    .talk {
-        max-width: 991px;
-    }
-    .footer {
-        max-width: 991px;
+    .container {
+
     }
    
 }
 
 @media screen and (max-width: 767px) {
 	
-    .hero-block__wrapper {
-        max-width: 767px;
+    .container {
+
     }
-    .talk {
-        max-width: 767px;
-    }
-    .footer {
-        max-width: 767px;
-    }
-    
 }
 
 @media screen and (max-width: 575px) {
 	
-    .hero-block__wrapper {
-        max-width: 575px;
-    }
-    .talk {
-        max-width: 575px;
-    }
-    .footer {
-        max-width: 575px;
+    .container {
+        
     }
     
 }
 @media screen and (max-width: 375px) {
-    .hero-block__wrapper {
-        max-width: 375px;
-    }
-    .talk {
-        max-width: 375px;
-    }
-    .footer {
-        max-width: 375px;
+    .container {
+        
     }
     
 }
